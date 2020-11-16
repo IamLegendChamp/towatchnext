@@ -1,0 +1,45 @@
+html, body {
+  background-color: #ccc;
+}
+
+.App {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+  height: 50px;
+}
+
+.form {
+  width: 100% auto;
+  height: 50px;
+  margin-bottom: 100px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+  .form {width: 400px;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+  .form {width: 500px;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  .form {width: 800px;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .form {width: 900px;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  .form {width: 1000px;}
+}
