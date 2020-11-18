@@ -1,7 +1,7 @@
 # Which Movie would you like to Watch Next
 
 ### Description
-A React/React Router/Material UI app that offers users to search any movie. It offers a large number of movies from all over the world providing you a convenient solution to which movie to watch next this weekend.
+A React/React Router/Material UI app that offers users to search any movie. It offers a large number of movies from all over the world providing you a convenient solution to which movie to watch this weekend.
 The filters include:
 1. Name/keyword.
 2. Year of release.
