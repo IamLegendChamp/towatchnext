@@ -11,7 +11,7 @@ The filters include:
 
 ### Preview and YouTube Video
 <a href="https://youtu.be/3jrOQUXSrLs" target="_blank"><img src="https://i9.ytimg.com/vi/3jrOQUXSrLs/maxresdefault.jpg?time=1605678900000&sqp=CLTu0v0F&rs=AOn4CLAhu6vWv_JNZYYKUP5DmFY9KyxM7Q" 
-alt="Movie Search Resylts" width="240" height="180" border="10" /></a>
+alt="Movie Search Results" width="240" height="180" border="10" /></a>
 
 
 ### Live Website
