@@ -15,25 +15,17 @@ import { purple } from '@material-ui/core/colors';
 // import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
-
 const useStyles = makeStyles((theme)=>({
   card: {
     width: 250,
-    height: 400,
+    height: 425,
   },
   button: {
     margin: 'auto',
   },
-  wrapper: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
   title: {
     fontSize: '1rem',
+    height: '50px',
   }
 }));
 
@@ -91,7 +83,7 @@ const MoviesInfo = (props) => {
   return (
     <div className={classes.root}>
       <Grid container spacing={1}>
-        {props.apiData && props.apiData.map((a) => {
+        {props.session && props.session.map((a) => {
           return (
             <Grid item xs key={a.imdbID}>
               <Card className={classes.card}>
@@ -117,12 +109,19 @@ const MoviesInfo = (props) => {
                 </CardActionArea>
                 <CardActions>
                   {props.favorites && props.favorites.filter(p => p.imdbID === a.imdbID).length ?
-                    <ColorButton variant="contained" color="primary"  className={`${classes.button} ${classes.margin}`} onClick={()=>props.handleRemoveFavorites(a)}>Remove from favorite</ColorButton> :
+                    <ColorButton 
+                      variant="contained" 
+                      color="primary"  
+                      className={`${classes.button}`} 
+                      onClick={()=>props.handleRemoveFavorites(a)}
+                    >
+                      Remove from favorite
+                    </ColorButton> :
                     <BootstrapButton 
                       variant="contained" 
                       color="primary" 
                       disableRipple 
-                      className={`${classes.button} ${classes.margin}`} 
+                      className={`${classes.button}`} 
                       onClick={()=>props.handleAddFavorites(a)}
                     >
                       Add to favorite
